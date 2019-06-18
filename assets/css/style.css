@@ -5,17 +5,37 @@ body{
 
 nav{
     background-color: none !important;
+    animation-duration: 2.5s;
+    animation-name: drift;
 
 }
 
-#fas-fa-home{
-    float: right;
+.material-icons{
+    font-family: 'Lora', serif !important;
+    align: left; 
+
 }
 
 .card{
     height: 100%;
 }
 
-#activator{
-    height: 200px;
+
+h2{
+    text-align: center;
+    color: white;
+    animation-duration: 1.5s;
+    animation-name: drift;
+    position: relative;
+}
+
+@keyframes drift {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
 }

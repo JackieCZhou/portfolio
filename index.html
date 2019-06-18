@@ -9,9 +9,19 @@
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="assets/css/style.css"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/c912661c4f.js"></script>
 
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="portfolio.js"></script>
 
 </head>
 
@@ -28,46 +38,53 @@
     }
 
     .fas,
-    .far {
-      float: right;
+    .far,
+    .btn {
+      float: right !important;
       margin: 10px;
+      background-color: transparent !important;
+      -webkit-box-shadow: none !important;
+
     }
   </style>
 
-  <nav>
-    <a href="index.html" class="sidenav-trigger show-on-large"><i class="fas fa-home"></i></a>
-    <a href="about.html" class="sidenav-trigger show-on-large"><i class="far fa-user"></i></a>
-    <a href="contact.html" class="sidenav-trigger show-on-large"><i class="fas fa-envelope"></i></a>
-  </nav>
+  <h2>Portfolio</h2>
 
-  <ul id="slide-out" class="sidenav">
+  <nav>
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo"></a>
+          <a href="#" class="sidenav-trigger show-on-large" data-target="slide_out"><i class="fas fa-bars"></i></a>
+
+          <ul class="hide-on-med-and-down right">
+            <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="fas fa-bars"></i></a>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <ul class="sidenav" id="slide_out">
     <li>
       <div class="user-view">
         <div class="background">
-          <img src="images/IMG_1137.jpeg">
+          <img src="images/navbarimg.jpg">
         </div>
         <a href="#user"><img class="circle" src="images/IMG_1137.jpeg"></a>
         <a href="#name"><span class="white-text name">Jacqueline Zhou</span></a>
         <a href="#email"><span class="white-text email">jacqueline.colleen88@gmail.com</span></a>
       </div>
     </li>
-    <li><a href="#!"><i class="material-icons">cloud</i>Portfolio</a></li>
-    <li><a href="#!">Contact</a></li>
-    <li>
-      <div class="divider"></div>
-    </li>
-    <li><a class="subheader">Github</a></li>
+    <li><a href="index.html" class="sidenav-trigger show-on-large btn tooltipped"><a data-position="bottom"
+          data-tooltip="Home"><i class="fas fa-home"></i></a></li>
+    <li><a href="about.html" class="sidenav-trigger show-on-large btn tooltipped"><a data-position="bottom"
+          data-tooltip="About Me"></a><i class="far fa-user"></i></a></li>
+    <li><a href="contact.html" class="sidenav-trigger show-on-large btn tooltipped"><a data-position="bottom"
+          data-tooltip="Contact"></a><i class="fas fa-envelope"></i></a></li>
   </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large"><i class="material-icons">menu</i></a>
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, options);
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </div>
+  <br>
 
   <div class="container">
     <div class="row">
@@ -77,8 +94,7 @@
             <img class="activator" src="images/lawnmower.jpg" style="height: 300px">
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Lawn Care<i class="material-icons right">Learn
-                More</i></span>
+            <span class="card-title activator grey-text text-darken-4">Lawn Care<i class="fas fa-arrow-up"></i></span>
             <p><a href="https://calm-shelf-27060.herokuapp.com/">See Work</a></p>
           </div>
           <div class="card-reveal">
@@ -96,7 +112,7 @@
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">Spirit Animals<i
-                class="material-icons right">Learn More</i></span>
+                class="fas fa-arrow-up"></i></span>
             <p><a href="https://spiritanimal2019.herokuapp.com/">See Work</a></p>
           </div>
           <div class="card-reveal">
@@ -113,7 +129,7 @@
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">International Bites<i
-                class="material-icons right">Learn More</i></span>
+                class="fas fa-arrow-up"></i></span>
             <p><a href="https://jackieczhou.github.io/International-Bites/.">See Work</a></p>
           </div>
           <div class="card-reveal">
@@ -132,7 +148,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Friends Quiz<i
-                  class="material-icons right">Learn More</i></span>
+                  class="fas fa-arrow-up"></i></span>
               <p><a href="https://github.com/JackieCZhou/Trivia-Game">See Work</a></p>
             </div>
             <div class="card-reveal">
@@ -150,7 +166,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Crystal Collector<i
-                  class="material-icons right">Learn More</i></span>
+                class="fas fa-arrow-up"></i></span>
               <p><a href="https://jackieczhou.github.io/unit-4-game/">See Work</a></p>
             </div>
             <div class="card-reveal">
@@ -163,11 +179,10 @@
         <div class="col s4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/office.jpg">
+              <img class="activator" src="images/catchlogo.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Catch<i class="material-icons right">Learn
-                  More</i></span>
+              <span class="card-title activator grey-text text-darken-4">Catch<i class="fas fa-arrow-up"></i></span>
               <p><a href="#">See Work</a></p>
             </div>
             <div class="card-reveal">
@@ -183,12 +198,23 @@
       </div>
     </div>
   </div>
-  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+    const slide_menu = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(slide_menu, {});
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, options);
+    });
+  </script>
 
 
-
-
-  <!-- Compiled and minified JavaScript -->
 </body>
 
 </html>
