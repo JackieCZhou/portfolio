@@ -1,15 +1,21 @@
 body{
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(112,112,112,1) 79%, rgba(0,0,0,1) 100%);
+    background-color: rgb(255,255,255);
+    background-color: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(112,112,112,1) 79%, rgba(0,0,0,1) 100%);
 }
 
-.nav{
-    background-color: transparent !important;
+nav{
+    background-color: none !important;
+
 }
 
+#fas-fa-home{
+    float: right;
+}
 
 .card{
     height: 100%;
 }
+
 #activator{
     height: 200px;
 }
