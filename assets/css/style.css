@@ -4,9 +4,10 @@ body{
 }
 
 nav{
-    background-color: none !important;
     animation-duration: 2.5s;
     animation-name: drift;
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
 
 }
 
@@ -18,8 +19,18 @@ nav{
 
 .card{
     height: 100%;
+    color: transparent !important;
 }
 
+.fas,
+.far,
+.btn {
+  float: right !important;
+  margin: 10px;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+
+}
 
 h2{
     text-align: center;
@@ -38,4 +49,18 @@ h2{
         top: 0;
         opacity: 1;
     }
+}
+
+
+.img, p{
+    float:left; 
+    margin:20px;
+}
+
+h5{
+    text-align: center;
+}
+
+.btn{
+    align-content: center;
 }

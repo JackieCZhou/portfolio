@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c912661c4f.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="portfolio.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+        background: rgb(179,185,204);
+        background: radial-gradient(circle, rgba(179,185,204,1) 0%, rgba(72,103,125,1) 59%, rgba(24,36,74,1) 100%); 
+        }
+
+        nav {
+            background-color: transparent !important;
+            -webkit-box-shadow: none !important;
+        }
+
+        .fas,
+        .far,
+        .btn {
+            float: right !important;
+            margin: 10px;
+            background-color: transparent !important;
+            -webkit-box-shadow: none !important;
+
+        }
+    </style>
+
+    <h2>About Me</h2>
+
+    <nav>
+        <nav class="transparent z-depth-0">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"></a>
+                    <a href="#" class="sidenav-trigger show-on-large" data-target="slide_out"><i
+                            class="fas fa-bars"></i></a>
+
+                    <ul class="hide-on-med-and-down right">
+                        <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="fas fa-bars"></i></a>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <ul class="sidenav" id="slide_out">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/navbarimg.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="images/IMG_1137.jpeg"></a>
+                <a href="#name"><span class="white-text name">Jacqueline Zhou</span></a>
+                <a href="#email"><span class="white-text email">jacqueline.colleen88@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html" class="sidenav-trigger show-on-large btn tooltipped" style="margin:center"><i
+                    class="fas fa-home"></i></a></li>
+        <li><a href="contact.html" class="sidenav-trigger show-on-large btn tooltipped" style="margin:center"><i
+                    class="fas fa-envelope"></i></a></li>
+    </ul>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s4">
+                <img class="materialboxed" width="90%" src="images/IMG_1137.jpeg" style="margin-top: 150px">
+            </div>
+            <div class="col s8" style="color:white">
+                <h5>Carrier Background</h5>
+                <p>With a fine arts background and a passion for design, front end development is something I've
+                    quickly become enamored with.  Working for both large corperate companies as well as small boutiques I 
+                    have had the opportunity to see the benefits and functionality of both.  While holding team leader and management 
+                    positions I was able to use the most effective strategies from both to create optimal work environments 
+                    for both myself and my teams.
+                    My years in luxury retail and personal styling have given me excellent communicative skills and the ability to 
+                    not just understand what my client wants but to be able to see beyond what they know to be possible and implent 
+                    new ideas they didn't even know were an option.</p>
+
+                <h5>Technical Experience</h5>
+                <ul>
+                    <li>
+                        <p>Experience in the following languages:
+                            HTML5, CSS3, javascript, jQuery, React, Handlebars, Node Js, MySql, MongoDB, and Express.</p>
+                    </li>
+                    <li>
+                        <p>Knowledge of Bootstrap and Materialize frameworks</p>
+                    </li>
+                    <li>
+                        <p>Experience in maintaing the following team collaborative applications:
+                            WhenIwork, Airtable, Acuity Scheduling, Slack.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        const slide_menu = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(slide_menu, {});
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems, options);
+        });
+    </script>
+
+</body>
+
+</html>
