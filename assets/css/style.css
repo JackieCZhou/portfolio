@@ -18,8 +18,7 @@ nav{
 }
 
 .card{
-    height: 100%;
-    color: transparent !important;
+    height: 90%;
 }
 
 .fas,
@@ -29,7 +28,7 @@ nav{
   margin: 10px;
   background-color: transparent !important;
   -webkit-box-shadow: none !important;
-
+  color:white;
 }
 
 h2{
