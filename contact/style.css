@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
 body {
-  font-family: 'Montserrat', sans-serif;
   background: rgb(179, 185, 204);
   background: radial-gradient(circle, rgba(179, 185, 204, 1) 0%, rgba(72, 103, 125, 1) 59%, rgba(24, 36, 74, 1) 100%);
 }
@@ -84,7 +83,7 @@ body {
   opacity: 0;
 }
 .honeycomb-cell:hover::before {
-  background: #72f88e;
+  background: #090043;
 }
 .honeycomb-cell:hover::after {
   opacity: 0;

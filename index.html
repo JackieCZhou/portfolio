@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://kit.fontawesome.com/c912661c4f.js"></script>
@@ -20,8 +20,14 @@
 </head>
 
 <body>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
 
   <style>
+    body {
+      background: rgb(179, 185, 204);
+      background: radial-gradient(circle, rgba(179, 185, 204, 1) 0%, rgba(72, 103, 125, 1) 59%, rgba(24, 36, 74, 1) 100%) !important;
+    }
+
     nav {
       background-color: transparent !important;
       -webkit-box-shadow: none !important;
@@ -35,24 +41,8 @@
       -webkit-box-shadow: none !important;
 
     }
-
-    .activator {
-      height: 350px;
-      clip-path: circle(50%);
-    }
-
-    .card {
-      height: 350px;
-      transform: skew(5deg);
-      background-color: transparent;
-      -webkit-box-shadow: none !important;
-      color: white;
-    }
-
-    p {
-      color: black;
-    }
   </style>
+
   <nav>
     <nav class="transparent z-depth-0">
       <div class="nav-wrapper">
@@ -79,9 +69,9 @@
         <a href="#email"><span class="white-text email">jacqueline.colleen88@gmail.com</span></a>
       </div>
     </li>
-    <li><a href="about.html" class="sidenav-trigger show-on-large btn tooltipped"><i
+    <li><a href="./about/about.html" class="sidenav-trigger show-on-large btn tooltipped"><i
           class="far fa-user light-blue"></i></a></li>
-    <li><a href="contact.html" class="sidenav-trigger show-on-large btn tooltipped"><i
+    <li><a href="./contact/contact.html" class="sidenav-trigger show-on-large btn tooltipped"><i
           class="fas fa-envelope light-blue"></i></a>
     </li>
 
@@ -155,6 +145,7 @@
       <div class="honeycomb-cell__title">Contact</div>
     </li>
   </ul>
+  <br>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
