@@ -22,6 +22,7 @@
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
 
         <script src="portfolio.js"></script>
     </head>
@@ -34,23 +35,56 @@
         }
 
         nav {
+            animation-duration: 2.5s;
+            animation-name: drift;
             background-color: transparent !important;
             -webkit-box-shadow: none !important;
         }
 
+        .activator {
+            height: 350px;
+            clip-path: circle(50%);
+        }
+
+        p {
+            color: white;
+        }
+
         .fas,
         .far,
-        .btn {
-            float: right !important;
-            margin: 10px;
+        .btn,
+        p {
             background-color: transparent !important;
             -webkit-box-shadow: none !important;
 
         }
 
         .card {
-            background-color: transparent !important;
+            height: 350px;
+            transform: skew(5deg);
+            background-color: transparent;
             -webkit-box-shadow: none !important;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            animation-duration: 1.5s;
+            animation-name: drift;
+            position: relative;
+        }
+
+        @keyframes drift {
+            from {
+                top: -200px;
+                opacity: 0;
+            }
+
+            to {
+                top: 0;
+                opacity: 1;
+            }
         }
     </style>
 
@@ -76,9 +110,9 @@
         <li>
             <div class="user-view">
                 <div class="background">
-                    <img src="images/navbarimg.jpg">
+                    <img src="../images/navbarimg.jpg">
                 </div>
-                <a href="#user"><img class="circle" src="images/IMG_1137.jpeg"></a>
+                <a href="#user"><img class="circle" src="../images/IMG_1137.jpeg"></a>
                 <a href="#name"><span class="white-text name">Jacqueline Zhou</span></a>
                 <a href="#email"><span class="white-text email">jacqueline.colleen88@gmail.com</span></a>
             </div>
@@ -102,34 +136,39 @@
                         <p>
                             Interested in setting up an interview or collaborating on a project?
                             Take a look at my full Resume, Linkedin, Github as well as additional contact information
-                            below. </p>
+                            below.
+                            <br>
+                            E-mail: jacqueline.colleen88gmail.com
+                            <br>
+                            Phone: 302-367-5192</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col s6">
-                <div class="card #e1f5fe light-blue lighten-3" style="height:100px">
-                    <div class="card-content white-text">
-                        <p>E-mail: jacqueline.colleen88gmail.com</p>
-                        <br>
-                        <p>Phone: 302-367-5192</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="col s2">
-                <a class="waves-effect #e1f5fe light-blue lighten-3 btn-large"
-                    href="https://github.com/JackieCZhou">Github</a>
-            </div>
-            <div class="col s2">
-                <a class="waves-effect ##e1f5fe light-blue lighten-3 btn-large"
-                    href="https://www.linkedin.com/in/jackie-zhou-75330787/">Linkedin</a>
-            </div>
-            <div class="col s2">
-                <a class="waves-effect #e1f5fe light-blue lighten-3 btn-large"
-                    href="https://docs.google.com/document/d/1kT0uqUbwT_a7Jk2a4zj7O0pIeqRFkfZAL5RhjEKy-Ts/edit?usp=sharing">Resume</a>
-            </div>
+
+            
+                <a class="btn" href="https://github.com/JackieCZhou">
+                    <ul class="honeycomb" lang="es">
+                        <li class="honeycomb-cell">
+                        <img class="honeycomb-cell__image" src="../images/neutralbackground.png">
+                        <div class="honeycomb-cell__title">Github</div>
+                    </li>
+                </a>
+
+                <a class="btn" href="https://www.linkedin.com/in/jackie-zhou-75330787/">
+                    <li class="honeycomb-cell">
+                        <img class="honeycomb-cell__image" src="../images/neutralbackground.png">
+                        <div class="honeycomb-cell__title">Linkedin</div>
+                    </li>
+                </a>
+
+                <a class="btn"
+                    href="https://docs.google.com/document/d/1kT0uqUbwT_a7Jk2a4zj7O0pIeqRFkfZAL5RhjEKy-Ts/edit?usp=sharing">
+                    <li class="honeycomb-cell">
+                        <img class="honeycomb-cell__image" src="images/neutralbackground.png">
+                        <div class="honeycomb-cell__title">Resume</div>
+                    </li>
+                </a>
+            </ul>
         </div>
     </div>
     </div>

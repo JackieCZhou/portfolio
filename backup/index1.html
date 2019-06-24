@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio Home</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/c912661c4f.js"></script>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="portfolio.js"></script>
+
+</head>
+
+<body>
+  <style>
+    body {
+      background: rgb(179, 185, 204);
+      background: radial-gradient(circle, rgba(179, 185, 204, 1) 0%, rgba(72, 103, 125, 1) 59%, rgba(24, 36, 74, 1) 100%);
+    }
+
+    nav {
+      background-color: transparent !important;
+      -webkit-box-shadow: none !important;
+    }
+
+    .fas,
+    .far,
+    .btn,
+    p {
+      background-color: transparent !important;
+      -webkit-box-shadow: none !important;
+
+    }
+
+    .activator {
+      height: 350px;
+      clip-path: circle(50%);
+    }
+
+    .card {
+      height: 350px;
+      transform: skew(5deg);
+      background-color: transparent;
+      -webkit-box-shadow: none !important;
+      color: white;
+    }
+
+    p {
+      color: black;
+    }
+  </style>
+
+  <h2>Portfolio</h2>
+
+  <nav>
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo"></a>
+          <a href="#" class="sidenav-trigger show-on-large" data-target="slide_out"><i class="fas fa-bars"></i></a>
+
+          <ul class="hide-on-med-and-down right">
+            <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="fas fa-bars"></i></a>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <ul class="sidenav" id="slide_out">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/navbarimg.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/IMG_1137.jpeg"></a>
+        <a href="#name"><span class="white-text name">Jacqueline Zhou</span></a>
+        <a href="#email"><span class="white-text email">jacqueline.colleen88@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="about.html" class="sidenav-trigger show-on-large btn tooltipped"><i
+          class="far fa-user light-blue"></i></a></li>
+    <li><a href="contact.html" class="sidenav-trigger show-on-large btn tooltipped"><i
+          class="fas fa-envelope light-blue"></i></a>
+    </li>
+
+    <a class="waves-effect #e1f5fe light-blue lighten-3 btn-large" href="https://github.com/JackieCZhou"
+      style="margin:15px; width:200px; align-self: center">Github</a>
+    <br>
+
+    <a class="waves-effect ##e1f5fe light-blue lighten-3 btn-large"
+      href="https://www.linkedin.com/in/jackie-zhou-75330787/" style="margin:15px; width:200px">Linkedin</a>
+    <br>
+
+    <a class="waves-effect #e1f5fe light-blue lighten-3 btn-large"
+      href="https://docs.google.com/document/d/1kT0uqUbwT_a7Jk2a4zj7O0pIeqRFkfZAL5RhjEKy-Ts/edit?usp=sharing"
+      style="margin:15px; width:200px">Resume</a>
+
+  </ul>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <span class="card-title activator white-text"></span>
+            <img class="activator" src="images/lawmower2.jpeg">
+          </div>
+          <div class="card-content"><i class="fas fa-arrow-up"></i>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><i class="far fa-window-close"></i></span>
+            <p>A react based site, you can create an account, log in, select services to purchase and checkout.</p>
+            <p><a href="https://calm-shelf-27060.herokuapp.com/">See Work</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col s4">
+        <div class="card" style="margin-top:40px">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/SpiritAnimal2.jpeg">
+          </div>
+          <div class="card-content"><i class="fas fa-arrow-up"></i>
+            <span class="card-title activator white-text"></span>
+
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><i class="far fa-window-close"></i></span>
+            <p>Designed with Materialize follow the link to take the quiz to find out who your spirit animal is</p>
+            <p><a href="https://spiritanimal2019.herokuapp.com/">See Work</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/FoodMap2.jpeg">
+          </div>
+          <div class="card-content"><i class="fas fa-arrow-up"></i>
+            <span class="card-title activator white-text"></span>
+
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><i class="far fa-window-close"></i></span>
+            <p>Search for recipes based on regions of the world</p>
+            <p><a href="https://jackieczhou.github.io/International-Bites/.">See Work</a></p>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/Friends2.jpeg">
+            </div>
+            <div class="card-content"><i class="fas fa-arrow-up"></i>
+              <span class="card-title activator white-text"></span>
+
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="far fa-window-close"></i></span>
+              <p>Test your knowledge of the T.V show Friends with a fun quiz.</p>
+              <p><a href="https://github.com/JackieCZhou/Trivia-Game">See Work</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/Crystal2.jpeg">
+            </div>
+            <div class="card-content"><i class="fas fa-arrow-up"></i>
+              <span class="card-title activator white-text"></span>
+
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="far fa-window-close"></i></span>
+              <p>Try to match the computers score by clicking the crystals to reveal their points.</p>
+              <p><a href="https://jackieczhou.github.io/unit-4-game/">See Work</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/finalcatchlogo2.jpg">
+            </div>
+            <div class="card-content"><i class="fas fa-arrow-up"></i>
+              <span class="card-title activator white-text"></span>
+
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><i class="far fa-window-close"></i></span>
+              <p>Never miss finding the perfect employee again with Catch, a react based application for collecting and
+                sharing who you meet.</p>
+              <p><a href="#">See Work</a></p>
+            </div>
+          </div>
+        </div>
+        <br>
+
+
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .triangle-right {
+      width: 0;
+      height: 0;
+      border-top: 125px solid transparent;
+      border-left: 200px solid white;
+      border-bottom: 125px solid transparent;
+      margin: 30px;
+      background-image: url("lawnmower.jpg") !important;
+  </style>
+
+  <div class="triangle-right">
+    <p>Interests: Travel, hiking, photography, fitness, paddleboarding</p>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+    const slide_menu = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(slide_menu, {});
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, options);
+    });
+  </script>
+
+
+</body>
+
+</html>

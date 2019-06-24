@@ -1,6 +1,6 @@
 body{
-    background-color: rgb(255,255,255);
-    background-color: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(112,112,112,1) 79%, rgba(0,0,0,1) 100%);
+    background: rgb(179, 185, 204);
+    background: radial-gradient(circle, rgba(179, 185, 204, 1) 0%, rgba(72, 103, 125, 1) 59%, rgba(24, 36, 74, 1) 100%);
 }
 
 nav{
@@ -17,12 +17,16 @@ nav{
 
 }
 
-.card{
-    height: 90%;
+#row{
+    height: 300px;
 }
 
 .fas,
-.far,
+.far{
+    float:right;
+    margin: 10px;
+}
+
 .btn {
   float: right !important;
   margin: 10px;
