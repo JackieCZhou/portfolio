@@ -4,7 +4,7 @@ var aText = new Array(
 "E-mail: jacqueline.colleen88gmail.com",
 "Phone: 302-367-5192"
 );
-var iSpeed = 100;
+var iSpeed = 50;
 var iIndex = 0;
 var iArrLength = aText[0].length;
 var iScrollAt = 50;
