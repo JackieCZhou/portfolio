@@ -110,6 +110,10 @@ body {
     margin-right: calc(50% - 125px);
     margin-left: calc(50% - 125px);
   }
+    .honeycomb-cell__title{
+      font-weight: 700;
+      font-size: 1.0em;
+      }
 
   .honeycomb__placeholder:nth-child(3n + 5) {
     display: block;
