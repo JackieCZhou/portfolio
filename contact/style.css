@@ -95,15 +95,31 @@ body {
   margin: 0 12.5px;
 }
 
-@media (max-width: 375px) {
-  .honeycomb-cell {
-    margin:81.25px 25px;
-    width: 100%;
-  }
+@media (max-width: 400px) {
   .honeycomb-cell__title{
-  font-weight: 700;
-  font-size: .55em;
+  font-weight: 300;
+  font-size: 5px;
   }
+  #typedtext{
+    font-weight: 700;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+  .honeycomb-cell:nth-child(3n) {
+    margin-right: calc(50% - 125px);
+    margin-left: calc(50% - 125px);
+  }
+    .honeycomb-cell__title{
+      font-weight: 300;
+      font-size: 5px;
+      }
+
+  .honeycomb__placeholder:nth-child(3n + 5) {
+    display: block;
+  }
+  
 }
 
 @media (max-width: 550px) {
@@ -114,6 +130,10 @@ body {
   .honeycomb-cell__title{
   font-weight: 700;
   font-size: .95em;
+  }
+  #typedtext{
+    font-weight: 700;
+    font-size: 10px;
   }
 }
 @media (min-width: 550px) and (max-width: 825px) {
