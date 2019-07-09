@@ -102,7 +102,7 @@ body {
   }
   .honeycomb-cell__title{
   font-weight: 700;
-  font-size: .95em;
+  font-size: .55em;
   }
 }
 @media (min-width: 550px) and (max-width: 825px) {
