@@ -1,6 +1,6 @@
 # portfolio
 
-Follow the link to see my portfolio: https://jackieczhou.github.io/Bootstrap-Portfolio/
+Follow the link to see my portfolio: https://jackieczhou.github.io/portfolio/.
 
 This app contains a variety of projects within my github as well as pages about myself, a contact page and links to my resume and linkedin.
 
