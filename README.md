@@ -10,4 +10,4 @@ Languages Used: HTML, CSS, Javascript
 
 Layout & Design: Bootstrap
 
-The next steps of this project would be: Fine tune styling. Convert entire project to React.js. Host on a live website. Add an "about me" video feautre. Add a contact feature to email me directly or setup an appointment via google calendar.
+The next steps of this project would be: Fine tune styling. Convert entire project to React.js. Host on a live website. Add an "about me" video feautre. Add a contact feature to email me directly or setup an appointment via google calendar. Fix & add media queries for smoother screen size transition.
