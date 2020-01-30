@@ -98,7 +98,7 @@ body {
 @media (max-width: 400px) {
   .honeycomb-cell__title{
   font-weight: 300;
-  font-size: 5px;
+  font-size: 1px;
   }
   #typedtext{
     font-weight: 700;
@@ -113,7 +113,7 @@ body {
   }
     .honeycomb-cell__title{
       font-weight: 300;
-      font-size: 5px;
+      font-size: 1px;
       }
 
   .honeycomb__placeholder:nth-child(3n + 5) {
