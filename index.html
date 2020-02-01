@@ -16,7 +16,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
 </head>
 
 <body>
@@ -42,6 +41,14 @@
 
     }
   </style>
+<script>
+$('#exampleModal').on('shown.bs.modal', function () {
+  $('#video1')[0].play();
+})
+$('#exampleModal').on('hidden.bs.modal', function () {
+  $('#video1')[0].pause();
+})
+</script>
 
   <nav>
     <nav class="transparent z-depth-0">
@@ -90,6 +97,30 @@
   </ul>
   </div>
 
+  <div class="container" style="margin-left: 80%">
+    <div class="col-md-4">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        About Me</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position:absolute; color: white; text-align:center; max-width: 350px; max-height: 250px; margin-left: 70%; margin-top: 325px; background: none;"> 
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h6 class="modal-title" id="exampleModalLabel">About Me</h6>
+                </div>
+                <div class="modal-body">
+                    <video width="300px" muted playsinline controls autoplay>
+                        <source src="Portfolio_Intro_480p.mp4" type="video/mp4" id="video1"></video>
+                      </video>           
+                    </div>
+        
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+  </div>
+
   <ul class="honeycomb" lang="es">
     <a href="https://calm-shelf-27060.herokuapp.com/" li class="honeycomb-cell">
       <img class="honeycomb-cell__image" src="images/lawnmower.jpg">
@@ -97,7 +128,7 @@
       </li>
     </a>
 
-    
+
 
     <a href="https://jackieczhou.github.io/unit-4-game/" li class="honeycomb-cell">
       <img class="honeycomb-cell__image" src="images/Crystal.jpg">
@@ -105,7 +136,7 @@
       </li>
     </a>
 
-    
+
 
     <a href="https://jackieczhou.github.io/Trivia-Game/" li class="honeycomb-cell">
       <img class="honeycomb-cell__image" src="images/Friends.jpg">
@@ -113,7 +144,7 @@
       </li>
     </a>
 
-    
+
 
     <a href="https://github.com/JackieCZhou" li class="honeycomb-cell">
       <img class="honeycomb-cell__image" src="images/GitHub-Mark copy.jpg">
@@ -158,12 +189,13 @@
     </a>
 
 
-    <a href="https://docs.google.com/document/d/1kT0uqUbwT_a7Jk2a4zj7O0pIeqRFkfZAL5RhjEKy-Ts/edit?ts=5d117542" li class="honeycomb-cell">
+    <a href="https://docs.google.com/document/d/1kT0uqUbwT_a7Jk2a4zj7O0pIeqRFkfZAL5RhjEKy-Ts/edit?ts=5d117542" li
+      class="honeycomb-cell">
       <img class="honeycomb-cell__image" src="images/neutralbackground.png">
       <div class="honeycomb-cell__title">Resume</div>
       </li>
     </a>
-    
+
     <a href="./contact/contact.html" li class="honeycomb-cell">
       <img class="honeycomb-cell__image" src="images/neutralbackground.png">
       <div class="honeycomb-cell__title">Contact</div>
@@ -173,8 +205,13 @@
   </ul>
   <br>
 
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
   <script>
