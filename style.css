@@ -50,7 +50,7 @@ body {
   margin-top: 0.25em;
 }
 .honeycomb-cell__image {
-  -o-object-fit: cover;
+  -o-object-fit: scale-down;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
@@ -167,4 +167,6 @@ body {
   }
 }
 
-
+.col{
+  min-width:100%!important;
+}
